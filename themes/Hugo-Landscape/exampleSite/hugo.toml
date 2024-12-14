@@ -1,0 +1,34 @@
+baseURL = 'https://kkbt0.github.io/Hugo-Landscape/'
+# baseURL = 'https://example.org/public/'
+languageCode = 'zh-CN'
+title = 'Hugo-Landscape'
+theme = "../.."
+enableRobotsTXT = true
+
+[params.author]
+name = "恐咖兵糖"
+homepage ="https://www.ftls.xyz"
+description = "浮生若梦，为欢几何"
+
+[params]
+  title = "Hugo-Landscape"
+  description = "我们的征途是星辰大海！"
+  banner = "https://www.dmoe.cc/random.php"
+
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup.goldmark.renderer]
+    hardWraps = true
+    
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = "/posts/:slug"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
